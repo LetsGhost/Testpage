@@ -15,7 +15,6 @@ function randomfact(){
 //Save Facts
 
 document.getElementById("savefact").addEventListener("click", saveFacts)
-document.getElementById("showfactslist").addEventListener("click", readFactList)
 
 const factList = []
 
@@ -28,5 +27,8 @@ function saveFacts(){
 
 function readFactList(){
     let cookies = document.cookie;
-    console.log(cookies)
+    
+    const newFactList = [cookies]
+    console.log(newFactList)
 }
+
